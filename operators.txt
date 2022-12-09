@@ -1,0 +1,63 @@
+<script>
+
+    function zelfverzinnen(){
+    //    alert("grover");
+        console.log("subtieler");
+        // operand
+        var getal = 15;
+                            // operator
+        console.log( getal = 25 );
+        console.log( getal % 4  );
+        console.log( getal == 12 );
+        console.log("================");
+        console.log( getal == 25 );
+        console.log( getal == "25" );
+        console.log("================");
+        console.log( getal === 25 );
+        console.log( getal === "25" );
+        console.log(getal > 30);
+        console.log("================");
+        console.log(getal);
+        getal + 50;
+        console.log(getal);
+        getal = getal + 1;
+        getal += 1;
+        getal++;
+        console.log(getal);
+        uitkomst = 10 | 8;   
+        //      0010
+        //      0001
+        //      0011
+        //      0000
+
+        //     1010
+        //     1000
+        //     1000
+        //     1010  
+        console.log(uitkomst);
+    }
+    /*
+    Assignment operators
+        =   +=  ++ -- -= *= /= %=  ^=
+
+    Arithmic operators
+        * + / ** - %     14 % 5     4 - HELE GETALLEN   Bedrag Geld Centen bedrag % 100
+
+    Comparative Operators   -  >> resulteren in Boolean
+        ==   === >  >=   <=  <
+
+    Logische Operators   EIS dat hun operanden boolean zijn
+       &&  and     || or
+
+    Bitwise operators
+        |   <<   >>  &    ~
+        1000
+        0100
+    */
+</script>
+<style>
+
+
+</style>
+<h1>Dat is in de IDE</h1>
+<button onclick="zelfverzinnen()"> Klik hier </button>

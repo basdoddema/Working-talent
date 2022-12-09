@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mijnmethode(){
+            var leeftijd = document.getElementById("invoerding").value;
+            // document.getElementById("uitkomst").innerHTML = "Jouw leeftijd is "+ leeftijd;
+            // // if // for
+            if(parseInt(leeftijd) < 16){
+                document.getElementById("uitkomst").innerHTML = "jij mag niks";
+                document.getElementById("uitkomst").style.backgroundColor = 'red';
+            }
+            if(16 < parseInt(leeftijd) && parseInt(leeftijd) < 18){
+                document.getElementById("uitkomst").innerHTML = "jij mag alleen bier of wijn";
+                document.getElementById("uitkomst").style.backgroundColor = 'orange';
+            }
+            if(parseInt(leeftijd) >= 18) {
+                document.getElementById("uitkomst").innerHTML = "Jij mag alles drinken";
+                document.getElementById("uitkomst").style.backgroundColor = 'green';
+            }
+            }
+
+    </script>
+</head>
+<body>
+    Leeftijd:
+    <input id="invoerding" ><button onclick="mijnmethode()">Check alcohol</button>
+    <div id="uitkomst">hoi</div>
+</body>
+</html>
